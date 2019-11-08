@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MahasiswaActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/clickGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get"/>
+        <EditText
+            android:id="@+id/edturl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="http://192.168.43.207/rest_api/index.php/mahasiswa?format=xml"/>
+    </LinearLayout>
+    <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+</LinearLayout>
